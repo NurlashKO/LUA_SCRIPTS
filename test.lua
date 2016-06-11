@@ -21,7 +21,7 @@ end
 --CONFIGURATION SECTION
 test_coldstart_loop_count = 60;
 test_hotstart_loop_count = 30;
-data_file = io.open("geolocation.csv", "a")
+data_file = io.open("C:\\geolocation.csv", "a")
 
 printdir(1)
 print("---------------------GPS begin test---------------------\r\n");
@@ -49,7 +49,7 @@ while (count < test_coldstart_loop_count) do
   fix = gps.gpsinfo();
 
 --PRINT TO FILE
-  data_file:write(fix)
+  data_file:write(fix + "\r\n")
 
   print(fix,"\r\n","\r\n");
   vmsleep(1000);
@@ -61,9 +61,6 @@ end;
 
 
 
-
---STOP SCRIPT !!!!!!!!!!!!!
-os.exit()
 
 
 print("\r\n-------------------waiting 10s for hotstart--------------------\r\n\r\n");
@@ -80,6 +77,7 @@ while (count < test_hotstart_loop_count) do
   print("-------------------run count=",count,"-----------\r\n");
   fix = gps.gpsinfo()
   print(fix,"\r\n","\r\n")
+  data_file:write(fix + "\r\n")
   vmsleep(1000)
 end;
 close = gps.gpsclose()
