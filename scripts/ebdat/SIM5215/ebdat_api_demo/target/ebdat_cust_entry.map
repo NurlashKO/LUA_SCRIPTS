@@ -1,0 +1,419 @@
+
+================================================================================
+
+Image Symbol Table
+
+    Mapping Symbols
+
+    Sym    Value        Execution Region
+
+    $a     0x03700000   EBDAT_CORE_RO
+    $p     0x0370001c   EBDAT_CORE_RO
+    $p     0x03700048   EBDAT_CORE_RO
+    $p     0x03700070   EBDAT_CORE_RO
+    $p     0x03700080   EBDAT_CORE_RO
+    $p     0x03700090   EBDAT_CORE_RO
+    $p     0x037000a8   EBDAT_CORE_RO
+    $d     0x037000b0   EBDAT_CORE_RO
+    $f     0x037000c0   EBDAT_CORE_RO
+    $f     0x037000c4   EBDAT_CORE_RO
+    $f     0x037000c8   EBDAT_CORE_RO
+    $f     0x037000cc   EBDAT_CORE_RO
+    $f     0x037000d0   EBDAT_CORE_RO
+    $a     0x037000e0   EBDAT_CORE_RO
+    $p     0x037000f0   EBDAT_CORE_RO
+    $p     0x03700108   EBDAT_CORE_RO
+    $p     0x03700124   EBDAT_CORE_RO
+    $p     0x03700138   EBDAT_CORE_RO
+    $p     0x03700150   EBDAT_CORE_RO
+    $p     0x03700168   EBDAT_CORE_RO
+    $p     0x03700184   EBDAT_CORE_RO
+    $d     0x037001b8   EBDAT_CORE_RO
+    $a     0x037001e4   EBDAT_CORE_RO
+    $d     0x0370022c   EBDAT_CORE_RO
+    $a     0x0370024c   EBDAT_CORE_RO
+    $d     0x0370027c   EBDAT_CORE_RO
+    $a     0x03700298   EBDAT_CORE_RO
+    $p     0x037002e0   EBDAT_CORE_RO
+    $d     0x037002ec   EBDAT_CORE_RO
+    $a     0x03700308   EBDAT_CORE_RO
+    $p     0x0370033c   EBDAT_CORE_RO
+    $p     0x03700358   EBDAT_CORE_RO
+    $p     0x0370036c   EBDAT_CORE_RO
+    $p     0x0370038c   EBDAT_CORE_RO
+    $d     0x037003a4   EBDAT_CORE_RO
+    $a     0x037003fc   EBDAT_CORE_RO
+    $d     0x03700c8c   EBDAT_CORE_RO
+    $d     0x03a00000   EBDAT_CORE_RW
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ebdat_entry.c                            0x00000000   Number         0  ebdat_entry.o ABSOLUTE
+    ebdat_func_ary.c                         0x00000000   Number         0  ebdat_func_ary.o ABSOLUTE
+    ebdat_entry                              0x03700000   ARM Code       0  ebdat_entry.o(ebdat_entry)
+    .text                                    0x037000e0   ARM Code       0  ebdat_entry.o(.text)
+    .text                                    0x037003fc   ARM Code       0  ebdat_func_ary.o(.text)
+    .constdata$1                             0x03700c94   Data           0  ebdat_entry.o(.constdata)
+    .constdata                               0x03700c94   Data           0  ebdat_entry.o(.constdata)
+    .data$0                                  0x03a00000   Data           0  ebdat_entry.o(.data)
+    my_test_str2                             0x03a00000   Data           4  ebdat_entry.o(.data)
+    .data                                    0x03a00000   Data           0  ebdat_entry.o(.data)
+    .bss$2                                   0x03a00004   Data           0  ebdat_entry.o(.bss)
+    .bss                                     0x03a00004   Data           0  ebdat_entry.o(.bss)
+    .bss$2                                   0x03a0002c   Data           0  ebdat_func_ary.o(.bss)
+    .bss                                     0x03a0002c   Data           0  ebdat_func_ary.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$ARM_ISAv5$M$E$P$PE$A:L22$X:L11$S22$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$PRES8 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    ebdat_customer_entry                     0x03700000   ARM Code     176  ebdat_entry.o(ebdat_entry)
+    ebdat_print_string                       0x037000e0   ARM Code      44  ebdat_entry.o(.text)
+    ebdat_thread_print                       0x0370010c   ARM Code      72  ebdat_entry.o(.text)
+    ebdat_thread_print_string                0x03700154   ARM Code      52  ebdat_entry.o(.text)
+    ebdat_lua_api_0_handler                  0x03700188   ARM Code      92  ebdat_entry.o(.text)
+    ebdat_lua_register_api1_sub_func_handler 0x037001e4   ARM Code      24  ebdat_entry.o(.text)
+    ebdat_lua_api_1_0_handler                0x037001fc   ARM Code      80  ebdat_entry.o(.text)
+    ebdat_lua_api_1_1_handler                0x0370024c   ARM Code      76  ebdat_entry.o(.text)
+    ebdat_lua_api_1_handler                  0x03700298   ARM Code     112  ebdat_entry.o(.text)
+    ebdat_lua_api_2_handler                  0x03700308   ARM Code     244  ebdat_entry.o(.text)
+    ebdat_func_load_ary                      0x037003fc   ARM Code    2200  ebdat_func_ary.o(.text)
+    g_sub_func_api0_array                    0x03a00004   Data          40  ebdat_entry.o(.bss)
+    f_strcpy                                 0x03a0002c   Data           4  ebdat_func_ary.o(.bss)
+    f_strlen                                 0x03a00030   Data           4  ebdat_func_ary.o(.bss)
+    f_strncpy                                0x03a00034   Data           4  ebdat_func_ary.o(.bss)
+    f_strcat                                 0x03a00038   Data           4  ebdat_func_ary.o(.bss)
+    f_strncat                                0x03a0003c   Data           4  ebdat_func_ary.o(.bss)
+    f_strstr                                 0x03a00040   Data           4  ebdat_func_ary.o(.bss)
+    f_strcmp                                 0x03a00044   Data           4  ebdat_func_ary.o(.bss)
+    f_strncmp                                0x03a00048   Data           4  ebdat_func_ary.o(.bss)
+    f_sprintf                                0x03a0004c   Data           4  ebdat_func_ary.o(.bss)
+    f_std_strlcpy                            0x03a00050   Data           4  ebdat_func_ary.o(.bss)
+    f_std_strlcat                            0x03a00054   Data           4  ebdat_func_ary.o(.bss)
+    f_std_strlprintf                         0x03a00058   Data           4  ebdat_func_ary.o(.bss)
+    f_sscanf                                 0x03a0005c   Data           4  ebdat_func_ary.o(.bss)
+    f_itoa                                   0x03a00060   Data           4  ebdat_func_ary.o(.bss)
+    f_atoi                                   0x03a00064   Data           4  ebdat_func_ary.o(.bss)
+    f_vsprintf                               0x03a00068   Data           4  ebdat_func_ary.o(.bss)
+    f_vsnprintf                              0x03a0006c   Data           4  ebdat_func_ary.o(.bss)
+    f_memcpy                                 0x03a00070   Data           4  ebdat_func_ary.o(.bss)
+    f_memchr                                 0x03a00074   Data           4  ebdat_func_ary.o(.bss)
+    f_memcmp                                 0x03a00078   Data           4  ebdat_func_ary.o(.bss)
+    f_memmove                                0x03a0007c   Data           4  ebdat_func_ary.o(.bss)
+    f_memset                                 0x03a00080   Data           4  ebdat_func_ary.o(.bss)
+    f_setjmp                                 0x03a00084   Data           4  ebdat_func_ary.o(.bss)
+    f_longjmp                                0x03a00088   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_printdir                      0x03a0008c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_print                         0x03a00090   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_get_tick                      0x03a00094   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_mktime                        0x03a00098   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_localtime                     0x03a0009c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_gmtime                        0x03a000a0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_strftime                      0x03a000a4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_mem_alloc                     0x03a000a8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_mem_realloc                   0x03a000ac   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_mem_free                      0x03a000b0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_autodog                       0x03a000b4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_assert_okts                   0x03a000b8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_negate_okts                   0x03a000bc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_get_usb_mode                  0x03a000c0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_set_portmode                  0x03a000c4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_get_portmode                  0x03a000c8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_os_time                          0x03a000cc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_set_evt                          0x03a000d0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_wait_evt                         0x03a000d4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_peek_evt                         0x03a000d8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_clear_evts                       0x03a000dc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_get_evt_priority             0x03a000e0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_set_evt_priority             0x03a000e4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_set_evt_owner_thread_idx     0x03a000e8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_get_evt_owner_thread_idx     0x03a000ec   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_set_evt_as_ignored           0x03a000f0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_is_evt_ignored               0x03a000f4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_delete_spec_evt_with_params_from_queue 0x03a000f8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_get_evt_count_in_queue           0x03a000fc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_filter_add                   0x03a00100   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_evt_filter_delete                0x03a00104   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_set_current_thread_priority      0x03a00108   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_set_thread_priority              0x03a0010c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_get_current_thread_priority      0x03a00110   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_get_thread_priority              0x03a00114   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_enter_crit_sect                  0x03a00118   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_leave_crit_sect                  0x03a0011c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_thread_sleep                     0x03a00120   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_create_thread                    0x03a00124   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_kill_thread                      0x03a00128   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_resume_thread                    0x03a0012c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_suspend_thread                   0x03a00130   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_thread_running                   0x03a00134   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_thread_suspended                 0x03a00138   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_thread_get_current_index         0x03a0013c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_thread_register_prekill_func     0x03a00140   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_signal_clean                     0x03a00144   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_signal_notify                    0x03a00148   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_signal_wait                      0x03a0014c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_starttimer                       0x03a00150   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_stoptimer                        0x03a00154   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_stopalltimer_for_thread          0x03a00158   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_stopalltimer                     0x03a0015c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sio_send                         0x03a00160   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sio_recv                         0x03a00164   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sio_exclrpt                      0x03a00168   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sio_enable_recv                  0x03a0016c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sio_clear                        0x03a00170   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_creat                        0x03a00174   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_open                         0x03a00178   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_close                        0x03a0017c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_read                         0x03a00180   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_write                        0x03a00184   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_ftruncate                    0x03a00188   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_lseek                        0x03a0018c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_stat                         0x03a00190   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_fstat                        0x03a00194   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_lstat                        0x03a00198   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_tell                         0x03a0019c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_get_opened_filesize          0x03a001a0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_file_exist                   0x03a001a4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_dir_exist                    0x03a001a8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_delete_file                  0x03a001ac   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_rmdir                        0x03a001b0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_mkdir                        0x03a001b4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_get_filesize                 0x03a001b8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_truncate_file                0x03a001bc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_lsdir                        0x03a001c0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_efs_lsfile                       0x03a001c4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ftp_simpput                      0x03a001c8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ftp_simpget                      0x03a001cc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ftp_simplist                     0x03a001d0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_accquire_module              0x03a001d4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_release_module               0x03a001d8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_set_mmsc                     0x03a001dc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_get_mmsc                     0x03a001e0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_set_protocol                 0x03a001e4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_get_protocol                 0x03a001e8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_set_edit                     0x03a001ec   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_set_title                    0x03a001f0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_get_title                    0x03a001f4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_attach_file                  0x03a001f8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_attach_file_from_memory      0x03a001fc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_add_receipt                  0x03a00200   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_delete_receipt               0x03a00204   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_list_receipts                0x03a00208   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_save_attachment              0x03a0020c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_save                         0x03a00210   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_load                         0x03a00214   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_get_attach_info              0x03a00218   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_list_attach_info             0x03a0021c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_get_delivery_date_info       0x03a00220   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_read_attachment              0x03a00224   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_send                         0x03a00228   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_mms_recv                         0x03a0022c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_get_cmgf                     0x03a00230   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_set_cmgf                     0x03a00234   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_get_cscs                     0x03a00238   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_set_cscs                     0x03a0023c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_get_next_msg_ref             0x03a00240   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_convert_chset                0x03a00244   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_send_smstxt_msg              0x03a00248   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_write_smstxt_msg             0x03a0024c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_decode_pdu_sms               0x03a00250   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_cmss                         0x03a00254   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sms_read_msg                     0x03a00258   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_network_get_creg                 0x03a0025c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_network_get_cgreg                0x03a00260   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_network_get_cnsmod               0x03a00264   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_network_get_csq                  0x03a00268   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_atctl_send                       0x03a0026c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_atctl_recv                       0x03a00270   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_atctl_setport                    0x03a00274   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_atctl_clear                      0x03a00278   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_start                        0x03a0027c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_stop                         0x03a00280   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_get_fix_info                 0x03a00284   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_get_nmea_info                0x03a00288   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_set_mode                     0x03a0028c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_get_mode                     0x03a00290   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gps_delete_info                  0x03a00294   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_config                      0x03a00298   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_out                         0x03a0029c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_get                         0x03a002a0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_func_set                    0x03a002a4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_isr_set                     0x03a002a8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_gpio_debounce_set                0x03a002ac   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_adc_read                         0x03a002b0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_vaux_set                         0x03a002b4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_vaux_get                         0x03a002b8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_vaux_switch                      0x03a002bc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_vaux_get_state                   0x03a002c0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_i2c_read                         0x03a002c4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_i2c_combined_write_read          0x03a002c8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_i2c_write                        0x03a002cc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_auto_pwr_off_set              0x03a002d0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_auto_pwr_off_get              0x03a002d4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_enable_low_voltage_alarm      0x03a002d8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_disable_low_voltage_alarm     0x03a002dc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_enable_auto_pwr_on            0x03a002e0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_disable_auto_pwr_on           0x03a002e4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_enable_auto_pwr_off           0x03a002e8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_disable_auto_pwr_off          0x03a002ec   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_power_off                     0x03a002f0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_pm_power_reset                   0x03a002f4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_mic_gain_set               0x03a002f8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_sidetone_set               0x03a002fc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_auido_tx_gain_set                0x03a00300   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_rx_gain_set                0x03a00304   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_tx_vol_set                 0x03a00308   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_rx_vol_set                 0x03a0030c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_tx_ftr_set                 0x03a00310   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_rx_ftr_set                 0x03a00314   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_echo_mode_set              0x03a00318   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_noise_mode_set             0x03a0031c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_echo_param_set             0x03a00320   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_volumn_level_set           0x03a00324   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_volumn_level_select        0x03a00328   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_device_set                 0x03a0032c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_device_mute                0x03a00330   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_pcm_set                    0x03a00334   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_audio_play_tone                  0x03a00338   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ps_open_ps_network               0x03a0033c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ps_close_ps_network              0x03a00340   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_ps_release_ps_netlib             0x03a00344   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_async_deselect              0x03a00348   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_async_select                0x03a0034c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_create                      0x03a00350   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_connect                     0x03a00354   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_recv                        0x03a00358   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_send                        0x03a0035c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_recvfrom                    0x03a00360   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_sendto                      0x03a00364   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_close                       0x03a00368   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_bind                        0x03a0036c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_listen                      0x03a00370   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_accept                      0x03a00374   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_setsockopt                  0x03a00378   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_getsockopt                  0x03a0037c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sock_get_sock_name               0x03a00380   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_dns_get_host_entry               0x03a00384   Data           4  ebdat_func_ary.o(.bss)
+    f_srand                                  0x03a00388   Data           4  ebdat_func_ary.o(.bss)
+    f_rand                                   0x03a0038c   Data           4  ebdat_func_ary.o(.bss)
+    f_qsort                                  0x03a00390   Data           4  ebdat_func_ary.o(.bss)
+    f_atof                                   0x03a00394   Data           4  ebdat_func_ary.o(.bss)
+    f_fabs                                   0x03a00398   Data           4  ebdat_func_ary.o(.bss)
+    f_sin                                    0x03a0039c   Data           4  ebdat_func_ary.o(.bss)
+    f_sinh                                   0x03a003a0   Data           4  ebdat_func_ary.o(.bss)
+    f_cos                                    0x03a003a4   Data           4  ebdat_func_ary.o(.bss)
+    f_cosh                                   0x03a003a8   Data           4  ebdat_func_ary.o(.bss)
+    f_tan                                    0x03a003ac   Data           4  ebdat_func_ary.o(.bss)
+    f_tanh                                   0x03a003b0   Data           4  ebdat_func_ary.o(.bss)
+    f_asin                                   0x03a003b4   Data           4  ebdat_func_ary.o(.bss)
+    f_acos                                   0x03a003b8   Data           4  ebdat_func_ary.o(.bss)
+    f_atan                                   0x03a003bc   Data           4  ebdat_func_ary.o(.bss)
+    f_atan2                                  0x03a003c0   Data           4  ebdat_func_ary.o(.bss)
+    f_ceil                                   0x03a003c4   Data           4  ebdat_func_ary.o(.bss)
+    f_floor                                  0x03a003c8   Data           4  ebdat_func_ary.o(.bss)
+    f_fmod                                   0x03a003cc   Data           4  ebdat_func_ary.o(.bss)
+    f_modf                                   0x03a003d0   Data           4  ebdat_func_ary.o(.bss)
+    f_sqrt                                   0x03a003d4   Data           4  ebdat_func_ary.o(.bss)
+    f_log                                    0x03a003d8   Data           4  ebdat_func_ary.o(.bss)
+    f_log10                                  0x03a003dc   Data           4  ebdat_func_ary.o(.bss)
+    f_exp                                    0x03a003e0   Data           4  ebdat_func_ary.o(.bss)
+    f_frexp                                  0x03a003e4   Data           4  ebdat_func_ary.o(.bss)
+    f_ldexp                                  0x03a003e8   Data           4  ebdat_func_ary.o(.bss)
+    f_bsearch                                0x03a003ec   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_md5_Init                         0x03a003f0   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_md5_update                       0x03a003f4   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_md5_final                        0x03a003f8   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha1_init                        0x03a003fc   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha1_update                      0x03a00400   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha1_final                       0x03a00404   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha256_init                      0x03a00408   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha256_update                    0x03a0040c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha256_final                     0x03a00410   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha384_init                      0x03a00414   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha384_update                    0x03a00418   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha384_final                     0x03a0041c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha512_init                      0x03a00420   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha512_update                    0x03a00424   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_sha512_final                     0x03a00428   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_minizip_openzip                  0x03a0042c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_minizip_add_file                 0x03a00430   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_minizip_closezip                 0x03a00434   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_openzip                  0x03a00438   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_closezip                 0x03a0043c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_get_entry_count          0x03a00440   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_get_current_file_info    0x03a00444   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_goto_next_file           0x03a00448   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_miniunz_extract_currentfile      0x03a0044c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_lua_register_api_handler         0x03a00450   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_lua_deregister_api_handler       0x03a00454   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_lua_set_evt                      0x03a00458   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_lua_signal_notify                0x03a0045c   Data           4  ebdat_func_ary.o(.bss)
+    f_ebdat_lua_set_ready                    0x03a00460   Data           4  ebdat_func_ary.o(.bss)
+
+
+================================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x03700000
+
+  Load Region EBDAT_CORE_LOADER (Base: 0x03700000, Size: 0x00000d54, Max: 0x00300000, ABSOLUTE)
+
+    Execution Region EBDAT_CORE_RO (Base: 0x03700000, Size: 0x00000d54, Max: 0x00300000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr  Idx  E Section Name        Object
+
+    0x03700000   0x000000e0   Code   RO     2   * ebdat_entry         ebdat_entry.o
+    0x037000e0   0x0000031c   Code   RO     1     .text               ebdat_entry.o
+    0x037003fc   0x00000898   Code   RO     6     .text               ebdat_func_ary.o
+    0x03700c94   0x000000c0   Data   RO     4     .constdata          ebdat_entry.o
+
+
+
+  Load Region EBDAT_DATA_LOADER (Base: 0x03a00000, Size: 0x00000004, Max: 0x00200000, ABSOLUTE)
+
+    Execution Region EBDAT_CORE_RW (Base: 0x03a00000, Size: 0x00000464, Max: 0x00200000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr  Idx  E Section Name        Object
+
+    0x03a00000   0x00000004   Data   RW     3     .data               ebdat_entry.o
+    0x03a00004   0x00000028   Zero   RW     5     .bss                ebdat_entry.o
+    0x03a0002c   0x00000438   Zero   RW     7     .bss                ebdat_func_ary.o
+
+
+================================================================================
+
+Image component sizes
+
+
+      Code    RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2200          0          0       1080          0   ebdat_func_ary.o
+      1020        192          4         40          0   ebdat_entry.o
+
+    ------------------------------------------------------------------------
+      3220        192          4       1120          0   Object Totals
+
+    ------------------------------------------------------------------------
+         0          0          0          0          0   Library Totals
+
+    ------------------------------------------------------------------------
+
+================================================================================
+
+
+      Code    RO Data    RW Data    ZI Data      Debug   
+
+      3220        192          4       1120          0   Grand Totals
+
+================================================================================
+
+    Total RO  Size(Code + RO Data)                 3412 (   3.33kB)
+    Total RW  Size(RW Data + ZI Data)              1124 (   1.10kB)
+    Total ROM Size(Code + RO Data + RW Data)       3416 (   3.34kB)
+
+================================================================================
+

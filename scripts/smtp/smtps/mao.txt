@@ -1,0 +1,7 @@
+﻿at+cgpermset=1,"3gnet","songjin","123456",60
+at+cgpermset=3,"cmnet","tester1","12398",120
+at+cgpermset=6,"CMWAP","tester2","432378"
+
+at+cgpermset=3,"","",""
+
+at+cgpermset=6,"cmwap", "", "", 120

@@ -1,0 +1,46 @@
+dofile(gethomedir().."diag\\str_util.lua")
+dofile(gethomedir().."diag\\sio_util.lua")
+dofile(gethomedir().."diag\\diag.lua")
+dofile(gethomedir().."diag\\fs_diag.lua")
+
+function diag_test_main()
+  local port = diag_find_sio_port();
+  local diag_session = open_diag(port, true);
+  if ((not diag_session) or (not diag_session.diag_handle)) then
+    print("Failed to open diag port, ", port, "\r\n");
+    return;
+  end;
+  vmsleep(100);
+  print("Succeeded in opening diag port\r\n");  
+  
+  --init fs_diag session
+  diag_session = fs_diag_session_init(diag_session);  
+
+  --download 5216_delta_1_2.inst.mld file to module EFS as "C:\\Picture\\5216_delta_1_2.inst.mld"
+  local tmp_utf8_name = "E6 B5 8B E8 AF 95 E9 99 84 E4 BB B6 2E 6A 70 67";
+  local module_file_name = "C:\\"..string.hex2bin(tmp_utf8_name);
+  local local_pc_file_name = "²âÊÔ¸½¼þ.jpg";
+  local result = fs_diag_transfer_file_to_ue(diag_session, module_file_name, local_pc_file_name);
+  if (not result) then
+    print("Failed to transfer file",local_pc_file_name,"\r\n");
+  end;
+  
+  module_file_name = "C:\\mao.txt";
+  local_pc_file_name = "mao.txt";
+  result = fs_diag_transfer_file_to_ue(diag_session, module_file_name, local_pc_file_name);
+  if (not result) then
+    print("Failed to transfer file",local_pc_file_name,"\r\n");
+  end;
+  
+  module_file_name = "C:\\baidu.png";
+  local_pc_file_name = "baidu.png";
+  result = fs_diag_transfer_file_to_ue(diag_session, module_file_name, local_pc_file_name);
+  if (not result) then
+    print("Failed to transfer file",local_pc_file_name,"\r\n");
+  end;
+  
+  close_diag(diag_session);
+  print("end of diag test\r\n");
+end;
+
+diag_test_main();

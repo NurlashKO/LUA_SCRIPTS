@@ -1,0 +1,66 @@
+  ###################################################   
+  #                                                                                                                  
+  # Copyright (c) 2012 SIMCOM Corporation.  All Rights Reserved.                     
+  #                                                                                                               
+  ###################################################
+  #
+  #  PROJECT          EMBEDED AT SYSTEM
+  #
+  # LANGUAGE        armcc  script
+  #
+  # SUBSYSTEM       EMBEDED AT CUSTOMER-SIDE SYSTEM
+  #
+  # DESCRIPTION     
+  #          This is a scatter-loading description file used by armlink                
+  #
+  ###################################################
+  #
+  # HOSTORY
+  # 
+  #       when            who            what, where, why     
+  # 
+  # 2012/05/30     aaron        initial version
+  #
+  ###################################################
+
+ #####################################
+ #  
+ # Following is the memory map while customer's
+ # embeded at system is runing.
+ #
+ #!!!!WARNING, customer must conform to this
+ # memory map specification, since SIMCOM's module
+ # will load the segments by this memory map.
+ #
+ # ###################################
+ 
+ #------------+-  0x3700000
+ #                        |
+ #  EA CODE        |     size : 0x300000
+ #                        |
+ #------------+   0x3a00000
+ #                        |
+ #  EA_DATA        |    size : 0x200000
+ #                        |
+ #------------+- 0x3c00000
+ 
+#memory for code
+#the entry function must running at the address: 0x3700000
+EBDAT_CORE_LOADER 0x3700000 0x300000     
+{
+    EBDAT_CORE_RO +0x0 0x300000
+    {
+        *(ebdat_entry, +FIRST)   
+        *(+RO)
+    }
+}
+
+#memory for data
+EBDAT_DATA_LOADER 0x3A00000 0x200000    
+{
+    EBDAT_CORE_RW +0x0  0x200000
+    {
+    	*(+RW, +ZI)
+    }
+}
+

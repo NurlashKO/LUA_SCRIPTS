@@ -1,0 +1,4 @@
+1. On Windows, run efs_upload.bat to download sample SMTP attachment files to moudle EFS
+2. Copy the smtps.lua to the module.
+3. Using terminal tool, run AT+CSCRIPTSTART="smtps.lua",1 to test SMTPS function.
+4. Using terminal tool, run AT+CSCRIPTSTART="smtp.lua",1 to test SMTP function.

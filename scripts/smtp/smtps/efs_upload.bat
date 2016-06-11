@@ -1,0 +1,1 @@
+lua.exe fsdiagput.out

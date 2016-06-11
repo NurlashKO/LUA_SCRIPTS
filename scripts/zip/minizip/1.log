@@ -1,0 +1,12 @@
+MiniZip 1.1, demo of zLib + MiniZip64 package, written by Gilles Vollant
+more info on MiniZip at http://www.winimage.com/zLibDll/minizip.html
+
+Usage : minizip [-o] [-a] [-0 to -9] [-p password] [-j] file.zip [files_to_add]
+
+  -o  Overwrite existing file.zip
+  -a  Append to existing file.zip
+  -0  Store only
+  -1  Compress faster
+  -9  Compress better
+
+  -j  exclude path. store only the file name.
